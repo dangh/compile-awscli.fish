@@ -18,6 +18,7 @@ function compile-awscli
   sudo make install
   popd
 
+  deactivate
   sudo rm -rf $WORK_DIR
 
   file (which aws)
