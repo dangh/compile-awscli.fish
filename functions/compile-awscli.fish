@@ -1,5 +1,5 @@
 function compile-awscli
-  type -fx python3.12 || begin
+  test -fx python3.12 || begin
     echo Python 3.12 is required.
     return 1
   end
