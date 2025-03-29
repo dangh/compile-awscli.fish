@@ -1,6 +1,6 @@
 function compile-awscli
   which -s python3.12 || begin
-    echo Python 3.12 is required.
+    echo Python 3.12 is required for compilation.
     return 1
   end
 
@@ -18,7 +18,8 @@ function compile-awscli
   sudo make install
   popd
 
-  rm -rf $WORK_DIR
+  sudo rm -rf $WORK_DIR
 
+  file (which aws)
   command aws --version
 end
