@@ -21,6 +21,5 @@ function compile-awscli
   deactivate
   sudo rm -rf $WORK_DIR
 
-  file (which aws)
   command aws --version
 end
